@@ -650,6 +650,7 @@ h1 em {
 .nosotros {
   max-width: 800px;
   text-align: center;
+  background: #f1c39d;
 }
 
 .nosotros > p:not(.etiqueta) {
@@ -660,7 +661,6 @@ h1 em {
 /* CONTACTO */
 .contacto {
   padding: 45px 0;
-  background: #f1c39d;
 }
 
 .contacto > .contenedor {
