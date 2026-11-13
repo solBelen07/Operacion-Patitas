@@ -625,6 +625,7 @@ h1 em {
   padding: 40px;
   border-radius: 14px;
   background: #e9ebdf;
+  margin-top: 1.5em;
 }
 
 .consejos p {
@@ -728,6 +729,10 @@ footer .logo-marca {
   width: 200px;
 }
 
+footer li {
+  color: var(--texto);
+  font-size: 13px;
+}
 footer p,
 footer > a:last-child {
   font-size: 12px;
@@ -1082,6 +1087,9 @@ footer > a:last-child {
 
   footer .logo-marca {
     width: 180px;
+  }
+  footer li{
+
   }
 }
 
