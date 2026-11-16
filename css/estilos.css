@@ -1104,3 +1104,136 @@ footer > a:last-child {
   }
 }
 
+
+
+/* MENÚ DESPLEGABLE: CÓMO AYUDAR */
+.menu-ayudar { position: relative; }
+.menu-ayudar summary {
+  display: flex; align-items: center; gap: 6px; cursor: pointer;
+  list-style: none; white-space: nowrap;
+}
+.menu-ayudar summary::-webkit-details-marker { display: none; }
+.menu-ayudar summary:hover, .menu-ayudar[open] > summary { color: var(--naranja); }
+.menu-ayudar summary span { font-size: 18px; font-weight: 400; line-height: .8; transition: transform .2s; }
+.menu-ayudar[open] summary span { transform: rotate(180deg); }
+.menu-ayudar-opciones {
+  position: absolute; top: calc(100% + 12px); left: -18px; z-index: 20;
+  display: grid; min-width: 195px; padding: 10px;
+  background: #fffdf8; border: 1px solid var(--borde); border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(41,53,36,.12);
+}
+.menu-ayudar-opciones a { padding: 10px 12px; border-radius: 6px; font-size: 13px; }
+.menu-ayudar-opciones a:hover, .menu-ayudar-opciones a[aria-current="page"] { background: #f4e4d6; color: var(--naranja); }
+
+/* VISTA ENVIAR UNA ALERTA */
+.pagina-alerta .alerta-hero { padding: 27px 0 65px; background: #efede4; }
+.pagina-alerta .migas { margin-bottom: 15px; color: #707467; font-size: 12px; }
+.pagina-alerta .migas span { margin: 0 7px; }
+.pagina-alerta .migas a:hover { color: var(--naranja); }
+.alerta-hero-grilla { display: grid; grid-template-columns: 1fr .88fr; gap: 80px; align-items: center; }
+.alerta-hero-texto { padding: 8px 0; }
+.alerta-hero-texto h1 { font-size: clamp(50px, 5.2vw, 78px); }
+.alerta-hero-texto h1 em { color: var(--naranja); }
+.alerta-hero-texto .bajada { max-width: 505px; margin: 27px 0 30px; font-size: 17px; line-height: 1.8; }
+.alerta-hero-visual { position: relative; min-height: 480px; }
+.alerta-hero-visual img {
+  width: 100%; height: 475px; object-fit: cover; object-position: 50% 42%;
+  border-radius: 210px 210px 14px 14px;
+}
+.alerta-imagen-nota {
+  position: absolute; left: -40px; bottom: 25px; max-width: 265px;
+  padding: 17px 22px; border: 1px solid var(--borde); border-radius: 9px;
+  background: #fffdf8; color: var(--oscuro); box-shadow: 0 10px 25px rgba(41,53,36,.08);
+  font-size: 13px; font-weight: 600; line-height: 1.5;
+}
+.alerta-imagen-nota span { margin-right: 5px; color: var(--naranja); font-size: 20px; }
+.pasos-alerta { display: grid; grid-template-columns: .8fr 1.6fr; gap: 80px; }
+.pasos-titulo > p:last-child { max-width: 340px; margin-top: 20px; font-size: 14px; }
+.pasos-grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.pasos-grilla article { padding: 23px 17px; border: 1px solid var(--borde); border-top: 3px solid var(--naranja); border-radius: 9px; }
+.paso-numero { display: block; margin-bottom: 21px; color: var(--naranja); font: 28px Georgia, serif; }
+.pasos-grilla h3 { margin-bottom: 12px; font-size: 17px; }
+.pasos-grilla p { font-size: 13px; line-height: 1.75; }
+.alerta-formulario-zona { padding: 30px 0 100px; background: #e8eadf; }
+.alerta-formulario-grilla { display: grid; grid-template-columns: .82fr 1.2fr; gap: 85px; align-items: start; }
+.alerta-informacion { padding-top: 25px; }
+.alerta-informacion h2 { margin-bottom: 23px; }
+.alerta-informacion > p:not(.etiqueta) { max-width: 390px; font-size: 15px; }
+.alerta-recomendacion { display: flex; gap: 16px; margin-top: 37px; padding: 23px; border-radius: 10px; background: #d8decb; }
+.alerta-recomendacion > span { display: grid; place-items: center; flex-shrink: 0; width: 34px; height: 34px; border: 1px solid var(--oliva); border-radius: 50%; color: var(--oliva); font-weight: 700; }
+.alerta-recomendacion strong { font-size: 14px; }
+.alerta-recomendacion p { margin-top: 7px; font-size: 13px; }
+.alerta-contacto-extra { display: flex; gap: 12px; margin-top: 35px; }
+.alerta-contacto-extra > span { color: var(--naranja); font-size: 21px; }
+.alerta-contacto-extra p { font-size: 13px; }
+.alerta-contacto-extra a { color: var(--naranja); font-weight: bold; text-decoration: underline; text-underline-offset: 3px; }
+.alerta-formulario-tarjeta { padding: 43px 46px; border: 1px solid var(--borde); border-radius: 16px; background: #fffdf8; box-shadow: 0 15px 30px rgba(41,53,36,.05); scroll-margin-top: 20px; }
+.alerta-formulario-tarjeta h2 { margin-bottom: 15px; font-size: 40px; }
+.alerta-subtitulo { max-width: 510px; margin-bottom: 26px; font-size: 13px; }
+.alerta-formulario-tarjeta fieldset { min-width: 0; margin: 0; padding: 25px 0; border: 0; border-top: 1px solid var(--borde); }
+.alerta-formulario-tarjeta legend { float: left; width: 100%; margin-bottom: 19px; color: var(--oscuro); font-size: 17px; font-weight: 700; }
+.alerta-formulario-tarjeta legend + * { clear: both; }
+.campo-alerta { margin-bottom: 16px; }
+.campo-alerta:last-child { margin-bottom: 0; }
+.campo-alerta label { display: block; margin-bottom: 7px; color: var(--oscuro); font-size: 13px; font-weight: 700; }
+.campo-alerta label > span:not(.opcional) { color: var(--naranja); }
+.campo-alerta .opcional { color: #81877b; font-size: 11px; font-weight: 400; }
+.campo-alerta input, .campo-alerta select, .campo-alerta textarea {
+  display: block; width: 100%; min-height: 47px; padding: 12px 14px;
+  border: 1px solid #cdd0c4; border-radius: 6px; background: #fff;
+  color: var(--oscuro); font: inherit; font-size: 14px;
+}
+.campo-alerta textarea { resize: vertical; min-height: 115px; }
+.campo-alerta input[type="file"] { padding: 10px; font-size: 12px; }
+.campo-alerta small { display: block; margin-top: 6px; color: #6f756c; font-size: 11px; line-height: 1.5; }
+.campos-dos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.alerta-aviso-demo { margin: 10px 0 22px; padding: 13px 15px; border-left: 3px solid var(--naranja); background: #f8f0e6; font-size: 12px; }
+.boton-enviar-alerta { width: 100%; cursor: pointer; font-family: inherit; }
+.alerta-error { margin-top: 12px; color: #a32e18; font-size: 13px; }
+.alerta-confirmacion { padding: 25px 4px; }
+.alerta-confirmacion-icono { display: grid; place-items: center; width: 62px; height: 62px; margin-bottom: 24px; border-radius: 50%; background: #e4e9d9; color: var(--oliva); font-size: 34px; }
+.alerta-confirmacion p:not(.etiqueta) { margin-bottom: 20px; }
+.alerta-confirmacion .boton { margin: 13px 0 25px; cursor: pointer; }
+.alerta-confirmacion .enlace { display: flex; width: fit-content; }
+
+
+/* El atributo hidden siempre debe ocultar los paneles, incluso si se aplican estilos de presentación. */
+.pagina-alerta [hidden] { display: none !important; }
+
+
+@media (max-width: 1050px) {
+  .alerta-hero-grilla { gap: 40px; }
+  .pasos-alerta, .alerta-formulario-grilla { gap: 35px; }
+  .alerta-formulario-tarjeta { padding: 30px; }
+  .pasos-grilla { grid-template-columns: 1fr; }
+  .pasos-grilla article { padding: 16px 18px; }
+  .paso-numero { margin-bottom: 7px; }
+}
+@media (max-width: 800px) {
+  .alerta-hero-grilla { grid-template-columns: 1fr 1fr; gap: 25px; }
+  .alerta-hero-visual, .alerta-hero-visual img { min-height: 360px; height: 360px; }
+  .alerta-imagen-nota { left: -22px; bottom: 15px; max-width: 220px; font-size: 12px; }
+  .pasos-alerta { grid-template-columns: 1fr; }
+  .pasos-grilla { grid-template-columns: repeat(3, 1fr); }
+  .alerta-formulario-grilla { grid-template-columns: 1fr; }
+  .alerta-informacion { padding: 0; }
+  .alerta-informacion > p:not(.etiqueta) { max-width: 650px; }
+}
+@media (max-width: 560px) {
+  .menu-ayudar-opciones { position: absolute; right: 0; left: auto; min-width: 185px; }
+  .pagina-alerta .alerta-hero { padding: 20px 0 55px; }
+  .pagina-alerta .migas { margin-bottom: 25px; }
+  .alerta-hero-grilla { grid-template-columns: 1fr; }
+  .alerta-hero-texto h1 { font-size: 51px; }
+  .alerta-hero-texto .bajada { font-size: 15px; }
+  .alerta-hero-visual { margin-top: 20px; }
+  .alerta-hero-visual, .alerta-hero-visual img { height: 315px; min-height: 315px; }
+  .alerta-hero-visual img { border-radius: 150px 150px 12px 12px; }
+  .alerta-imagen-nota { left: 8px; bottom: -25px; }
+  .pasos-alerta { padding-top: 80px; }
+  .pasos-grilla { grid-template-columns: 1fr; }
+  .alerta-formulario-zona { padding: 58px 0 65px; }
+  .alerta-formulario-tarjeta { padding: 26px 20px; }
+  .alerta-formulario-tarjeta h2 { font-size: 32px; }
+  .campos-dos { grid-template-columns: 1fr; gap: 0; }
+}
