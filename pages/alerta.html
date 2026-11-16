@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informá sobre animales en situación de calle, abandono o posible maltrato en La Matanza. Conocé cómo enviar una alerta a Operación Patitas.">
+  <title>Enviar una alerta · Operación Patitas</title>
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    
+<body class="pagina-alerta">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header>
+    <div class="contenedor encabezado">
+      <a class="marca" href="../index.html#inicio" aria-label="Operación Patitas MTZ, inicio">
+        <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
+      </a>
+      <nav id="navegacion" aria-label="Navegación principal">
+        <a href="../index.html#adopciones">Adopciones</a>
+        <a href="../index.html#campanas">Campañas</a>
+        <details class="menu-ayudar">
+          <summary>Cómo ayudar <span aria-hidden="true">⌄</span></summary>
+          <div class="menu-ayudar-opciones">
+            <a href="alerta.html" aria-current="page">Enviar una alerta</a>
+            <a href="../index.html#ayudar">Ofrecer tránsito</a>
+            <a href="../index.html#ayudar">Donaciones</a>
+          </div>
+        </details>
+        <a href="../index.html#cuidados">Cuidados y bienestar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="alerta-hero">
+      <div class="contenedor">
+        <div class="migas"><a href="../index.html">Inicio</a> <span aria-hidden="true">/</span> <span>Cómo ayudar</span> <span aria-hidden="true">/</span> Enviar una alerta</div>
+        <div class="alerta-hero-grilla">
+          <div class="alerta-hero-texto">
+            <p class="etiqueta"><span class="puntito" aria-hidden="true"></span> UN AVISO PUEDE HACER LA DIFERENCIA</p>
+            <h1>Ayudanos a<br> <em>cuidarlos.</em></h1>
+            <p class="bajada">¿Viste un perro o gato en situación de calle, abandono o posible maltrato? Contanos qué pasó y dónde lo viste para que podamos conocer el caso.</p>
+            <div class="acciones">
+              <a class="boton" href="formulario-alerta.html">Enviar una alerta <span aria-hidden="true">↗</span></a>
+              <a class="boton secundario" href="#como-funciona">Cómo funciona</a>
+            </div>
+          </div>
+          <div class="alerta-hero-visual">
+            <img src="../img/perro-mestizo.jpg" alt="Perro mestizo blanco y negro mirando hacia un costado">
+            <div class="alerta-imagen-nota"><span aria-hidden="true">♡</span> Estar atentos también es una forma de cuidar.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="contenedor seccion pasos-alerta">
+      <div class="pasos-titulo">
+        <p class="etiqueta">TE CONTAMOS EL PROCESO</p>
+        <h2>¿Qué pasa después<br> de avisarnos?</h2>
+        <p>Tu información nos ayuda a evaluar cada situación. No todas las alertas implican una intervención inmediata.</p>
+      </div>
+      <div class="pasos-grilla">
+        <article><span class="paso-numero">01</span><h3>Contanos lo que viste</h3><p>Indicanos la localidad, una referencia del lugar y lo que observaste. Podés adjuntar una foto.</p></article>
+        <article><span class="paso-numero">02</span><h3>Revisamos el caso</h3><p>El equipo evalúa la situación y las posibilidades de atención según los recursos disponibles.</p></article>
+        <article><span class="paso-numero">03</span><h3>Nos ponemos en contacto</h3><p>Si es necesario, nos comunicaremos con vos para pedir más información o explicarte los próximos pasos.</p></article>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="contenedor">
+    <a class="marca" href="../index.html" aria-label="Operación Patitas MTZ, inicio">
+      <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
+    </a>
+    <p>Bienestar animal · La Matanza</p>
+    <div><ul><li>Correo electrónico: zoonosislm@hotmail.com</li><li>Teléfono: 4625-6273</li><li>Dirección: Peribebuy 4770, San Justo</li></ul></div>
+  </footer>
+
+  <script>
+    const formulario = document.getElementById('form-alerta');
+    const boton = document.getElementById('boton-simular-alerta');
+    const medio = document.getElementById('medio');
+    const contacto = document.getElementById('contacto');
+    const foto = document.getElementById('foto');
+    const error = document.getElementById('error-alerta');
+    const contenido = document.getElementById('alerta-formulario-contenido');
+    const confirmacion = document.getElementById('confirmacion-alerta');
+
+    function actualizarMedioContacto() {
+      const correo = medio.value === 'email';
+      contacto.type = correo ? 'email' : 'tel';
+      contacto.placeholder = correo ? 'Ej. nombre@correo.com' : 'Ej. 11 1234-5678';
+      contacto.autocomplete = correo ? 'email' : 'tel';
+      contacto.value = '';
+      contacto.setCustomValidity('');
+    }
+    medio.addEventListener('change', actualizarMedioContacto);
+    foto.addEventListener('change', () => { foto.setCustomValidity(''); error.hidden = true; });
+
+    boton.addEventListener('click', () => {
+      error.hidden = true;
+      contacto.setCustomValidity('');
+      foto.setCustomValidity('');
+      if (medio.value === 'telefono' && contacto.value.trim() && contacto.value.replace(/\D/g, '').length < 8) {
+        contacto.setCustomValidity('Ingresá un teléfono válido, con al menos 8 números.');
+      }
+      if (foto.files.length && foto.files[0].size > 5 * 1024 * 1024) {
+        foto.setCustomValidity('La imagen no puede superar los 5 MB.');
+      }
+      if (!formulario.reportValidity()) {
+        error.textContent = 'Revisá los campos señalados antes de continuar.';
+        error.hidden = false;
+        return;
+      }
+      contenido.hidden = true;
+      confirmacion.hidden = false;
+      confirmacion.focus();
+      confirmacion.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    });
+    formulario.addEventListener('submit', (e) => { e.preventDefault(); boton.click(); });
+    document.getElementById('boton-otra-alerta').addEventListener('click', () => {
+      formulario.reset();
+      contacto.setCustomValidity('');
+      foto.setCustomValidity('');
+      confirmacion.hidden = true;
+      contenido.hidden = false;
+      document.getElementById('localidad').focus();
+    });
+  </script>
 </body>
 </html>

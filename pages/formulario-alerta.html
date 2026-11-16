@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informá sobre animales en situación de calle, abandono o posible maltrato en La Matanza. Conocé cómo enviar una alerta a Operación Patitas.">
+  <title>Enviar una alerta · Operación Patitas</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="pagina-alerta">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header>
+    <div class="contenedor encabezado">
+      <a class="marca" href="../index.html#inicio" aria-label="Operación Patitas MTZ, inicio">
+        <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
+      </a>
+      <nav id="navegacion" aria-label="Navegación principal">
+        <a href="../index.html#adopciones">Adopciones</a>
+        <a href="../index.html#campanas">Campañas</a>
+        <details class="menu-ayudar">
+          <summary>Cómo ayudar <span aria-hidden="true">⌄</span></summary>
+          <div class="menu-ayudar-opciones">
+            <a href="alerta.html" aria-current="page">Enviar una alerta</a>
+            <a href="../index.html#ayudar">Ofrecer tránsito</a>
+            <a href="../index.html#ayudar">Donaciones</a>
+          </div>
+        </details>
+        <a href="../index.html#cuidados">Cuidados y bienestar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="alerta-formulario-zona" aria-labelledby="alerta-formulario-titulo">
+      <div class="contenedor alerta-formulario-grilla">
+        <aside class="alerta-informacion">
+          <p class="etiqueta">ANTES DE EMPEZAR</p>
+          <h2>La información que compartís importa.</h2>
+          <p>Intentá describir la situación con claridad. No hace falta que te acerques al animal si eso te pone en riesgo.</p>
+          <div class="alerta-recomendacion"><span aria-hidden="true">!</span>
+            <div><strong>Tené en cuenta</strong>
+                <p>Este formulario es un servicio de emergencias, tratamos de dar una respuesta inmediata. Si hay una situación critica, te recomendamos recurrir a un servicios de emergencia lo antes posible.</p>
+            </div>
+          </div>
+          <div class="alerta-contacto-extra"><span aria-hidden="true">↗</span><p>¿Querés conocer otras formas de colaborar? <a href="../index.html#ayudar">Volvé a Cómo ayudar</a>.</p></div>
+        </aside>
+
+        <div class="alerta-formulario-tarjeta" id="formulario-alerta">
+          <div id="alerta-formulario-contenido">
+            <p class="etiqueta">FORMULARIO DE ALERTA</p>
+            <h2 id="alerta-formulario-titulo">Contanos qué pasó.</h2>
+            <p class="alerta-subtitulo">Completá los datos para simular una alerta. Los campos marcados con * son obligatorios.</p>
+            <form id="form-alerta" novalidate>
+              <fieldset>
+                <legend>¿Dónde está el animal?</legend>
+                <div class="campo-alerta">
+                    <label for="situacion">Localidad <span aria-hidden="true">*</span></label>
+                    <select id="situacion" name="situacion" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option>San Justo</option>
+                        <option>Ramos Mejía</option>
+                        <option>Aldo Bonzi</option>
+                        <option>Ciudad Evita</option>
+                        <option>González Catán</option>
+                        <option>Gregorio de Laferrere</option>
+                        <option>Isidro Casanova</option>
+                        <option>La Tablada</option>
+                        <option>Lomas del Mirador</option>
+                        <option>Rafael Castillo</option>
+                        <option>Tapiales</option>
+                        <option>Veinte de Junio (20 de Junio)</option>
+                        <option>Villa Luzuriaga</option>
+                        <option>Villa Madero (incluye Villa Celina)</option>
+                        <option>Virrey del Pino</option>
+                    </select>
+                </div>
+                <div class="campo-alerta"><label for="ubicacion">Ubicación de referencia <span aria-hidden="true">*</span></label><input id="ubicacion" name="ubicacion" type="text" placeholder="Ej. calle y entre calles, o cerca de qué lugar" required><small>No hace falta que conozcas la dirección exacta.</small></div>
+              </fieldset>
+              <fieldset>
+                <legend>¿Qué observaste?</legend>
+                <div class="campo-alerta">
+                    <label for="situacion">Tipo de situación <span aria-hidden="true">*</span></label>
+                    <select id="situacion" name="situacion" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option>Animal en situación de calle</option>
+                        <option>Posible abandono</option>
+                        <option>Posible maltrato</option>
+                        <option>Otra situación</option>
+                    </select>
+                </div>
+                <div class="campo-alerta">
+                    <label for="descripcion">Describí lo que viste <span aria-hidden="true">*</span></label>
+                    <textarea id="descripcion" name="descripcion" rows="5" minlength="15" placeholder="¿Cómo se encuentra el animal? ¿Desde cuándo lo viste? ¿Hay algo más que debamos saber?" required></textarea>
+                    <small>Escribí al menos 15 caracteres.</small>
+                </div>
+                <div class="campo-alerta"><label for="foto">Adjuntar una foto <span class="opcional">(opcional)</span></label><input id="foto" name="foto" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="foto-ayuda"><small id="foto-ayuda">Formatos JPG, PNG o WebP. Máximo 5 MB. En esta demostración no se suben archivos.</small></div>
+              </fieldset>
+              <fieldset>
+                <legend>¿Cómo podemos contactarte?</legend>
+                <div class="campo-alerta"><label for="nombre">Tu nombre <span aria-hidden="true">*</span></label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required></div>
+                <div class="campos-dos">
+                  <div class="campo-alerta"><label for="medio">Medio de contacto <span aria-hidden="true">*</span></label><select id="medio" name="medio" required><option value="telefono">Teléfono / WhatsApp</option><option value="email">Correo electrónico</option></select></div>
+                  <div class="campo-alerta"><label for="contacto">Dato de contacto <span aria-hidden="true">*</span></label><input id="contacto" name="contacto" type="tel" placeholder="Ej. 11 1234-5678" autocomplete="tel" required></div>
+                </div>
+              </fieldset>
+              <button class="boton boton-enviar-alerta" type="button" id="boton-simular-alerta">Enviar alerta <span aria-hidden="true">↗</span></button>
+              <p id="error-alerta" class="alerta-error" role="alert" hidden></p>
+            </form>
+          </div>
+          <div id="confirmacion-alerta" class="alerta-confirmacion" role="status" hidden tabindex="-1">
+            <div class="alerta-confirmacion-icono" aria-hidden="true">✓</div>
+            <p class="etiqueta">Información enviada</p>
+            <h2>¡La información fue enviada correctamente, Gracias por querer ayudar!</h2>
+            <p>Gracias por comunicarte con Operación Patitas. Vamos a tratar de responderte a la brevedad. 
+                <strong>Tu alerta se envió a la organización</strong>, por favor quedate con el animal hasta que nuestro equipo se acerque a ayudar.</p>
+            <p>Mantenete a una distancia prudente si ves que no es seguro, no manipules el animal si esta lastimado.</p>
+            <button class="boton secundario" type="button" id="boton-otra-alerta">Completar otra alerta</button>
+            <a class="enlace" href="../index.html">Volver al inicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contenedor">
+    <a class="marca" href="../index.html" aria-label="Operación Patitas MTZ, inicio">
+      <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
+    </a>
+    <p>Bienestar animal · La Matanza</p>
+    <div><ul><li>Correo electrónico: zoonosislm@hotmail.com</li><li>Teléfono: 4625-6273</li><li>Dirección: Peribebuy 4770, San Justo</li></ul></div>
+  </footer>
+
+  <script>
+    const formulario = document.getElementById('form-alerta');
+    const boton = document.getElementById('boton-simular-alerta');
+    const medio = document.getElementById('medio');
+    const contacto = document.getElementById('contacto');
+    const foto = document.getElementById('foto');
+    const error = document.getElementById('error-alerta');
+    const contenido = document.getElementById('alerta-formulario-contenido');
+    const confirmacion = document.getElementById('confirmacion-alerta');
+
+    function actualizarMedioContacto() {
+      const correo = medio.value === 'email';
+      contacto.type = correo ? 'email' : 'tel';
+      contacto.placeholder = correo ? 'Ej. nombre@correo.com' : 'Ej. 11 1234-5678';
+      contacto.autocomplete = correo ? 'email' : 'tel';
+      contacto.value = '';
+      contacto.setCustomValidity('');
+    }
+    medio.addEventListener('change', actualizarMedioContacto);
+    foto.addEventListener('change', () => { foto.setCustomValidity(''); error.hidden = true; });
+
+    boton.addEventListener('click', () => {
+      error.hidden = true;
+      contacto.setCustomValidity('');
+      foto.setCustomValidity('');
+      if (medio.value === 'telefono' && contacto.value.trim() && contacto.value.replace(/\D/g, '').length < 8) {
+        contacto.setCustomValidity('Ingresá un teléfono válido, con al menos 8 números.');
+      }
+      if (foto.files.length && foto.files[0].size > 5 * 1024 * 1024) {
+        foto.setCustomValidity('La imagen no puede superar los 5 MB.');
+      }
+      if (!formulario.reportValidity()) {
+        error.textContent = 'Revisá los campos señalados antes de continuar.';
+        error.hidden = false;
+        return;
+      }
+      contenido.hidden = true;
+      confirmacion.hidden = false;
+      confirmacion.focus();
+      confirmacion.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    });
+    formulario.addEventListener('submit', (e) => { e.preventDefault(); boton.click(); });
+    document.getElementById('boton-otra-alerta').addEventListener('click', () => {
+      formulario.reset();
+      contacto.setCustomValidity('');
+      foto.setCustomValidity('');
+      confirmacion.hidden = true;
+      contenido.hidden = false;
+      document.getElementById('localidad').focus();
+    });
+  </script>
+</body>
+</html>
