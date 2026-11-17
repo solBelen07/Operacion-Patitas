@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario para ofrecer un hogar de tránsito temporal en La Matanza con Operación Patitas.">
+  <title>Solicitud de tránsito · Operación Patitas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="pagina-alerta pagina-transito">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header>
+    <div class="contenedor encabezado">
+      <a class="marca" href="../index.html#inicio" aria-label="Operación Patitas MTZ, inicio">
+        <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
+      </a>
+      <nav id="navegacion" aria-label="Navegación principal">
+        <a href="../index.html#adopciones">Adopciones</a>
+        <a href="../index.html#campanas">Campañas</a>
+        <details class="menu-ayudar">
+          <summary>Cómo ayudar <span aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span></summary>
+          <div class="menu-ayudar-opciones">
+            <a href="alerta.html">Enviar una alerta</a>
+            <a href="transito.html" aria-current="page">Ofrecer tránsito</a>
+            <a href="../index.html#ayudar">Donaciones</a>
+          </div>
+        </details>
+        <a href="../index.html#cuidados">Cuidados y bienestar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="alerta-formulario-zona" aria-labelledby="transito-formulario-titulo">
+      <div class="contenedor alerta-formulario-grilla">
+        <aside class="alerta-informacion">
+          <p class="etiqueta">ANTES DE EMPEZAR</p>
+          <h2>Un espacio temporal puede cambiarlo todo.</h2>
+          <p>Queremos conocerte y saber qué posibilidades tiene tu hogar para recibir a un perro o gato durante un tiempo.</p>
+          <div class="alerta-recomendacion">
+            <span aria-hidden="true">♡</span>
+            <div>
+              <strong>¿Qué significa ofrecer tránsito?</strong>
+              <p>Es recibir y cuidar temporalmente a un animal. El equipo compara las condiciones de tu hogar con sus necesidades, acuerda los cuidados y acompaña el proceso.</p>
+            </div>
+          </div>
+          <div class="transito-ayuda-lateral">
+            <h3>Antes de completar la solicitud</h3>
+            <p>Pensá qué espacio tenés disponible, por cuánto tiempo podrías alojarlo y cómo sería la convivencia con otros animales.</p>
+          </div>
+          <div class="alerta-contacto-extra"><span aria-hidden="true">↗</span><p>¿Querés leer más sobre el proceso? <a href="transito.html">Conocé cómo funciona el tránsito</a>.</p></div>
+        </aside>
+
+        <div class="alerta-formulario-tarjeta" id="formulario-transito">
+          <div id="transito-formulario-contenido">
+          <p class="etiqueta">FORMULARIO DE TRÁNSITO</p>
+          <h2 id="transito-formulario-titulo">Contanos sobre tu hogar.</h2>
+          <p class="alerta-subtitulo">Completá los datos para ofrecer un hogar de tránsito. Los campos marcados con * son obligatorios.</p>
+          <form id="form-transito" novalidate>
+            <fieldset>
+              <legend>Tus datos de contacto</legend>
+              <div class="campo-alerta">
+                <label for="nombre-transito">Nombre y apellido <span aria-hidden="true">*</span></label>
+                <input id="nombre-transito" name="nombre" type="text" autocomplete="name" placeholder="Escribí tu nombre y apellido" required minlength="3">
+              </div>
+              <div class="campo-alerta">
+                <label for="localidad-transito">Localidad <span aria-hidden="true">*</span></label>
+                <select id="localidad-transito" name="localidad" required>
+                  <option value="">Seleccioná tu localidad</option>
+                      <option>San Justo</option>
+                      <option>Ramos Mejía</option>
+                      <option>Aldo Bonzi</option>
+                      <option>Ciudad Evita</option>
+                      <option>González Catán</option>
+                      <option>Gregorio de Laferrere</option>
+                      <option>Isidro Casanova</option>
+                      <option>La Tablada</option>
+                      <option>Lomas del Mirador</option>
+                      <option>Rafael Castillo</option>
+                      <option>Tapiales</option>
+                      <option>Veinte de Junio (20 de Junio)</option>
+                      <option>Villa Luzuriaga</option>
+                      <option>Villa Madero (incluye Villa Celina)</option>
+                      <option>Virrey del Pino</option>
+                </select>
+              </div>
+              <div class="campos-dos">
+                <div class="campo-alerta">
+                  <label for="medio-transito">Medio de contacto <span aria-hidden="true">*</span></label>
+                  <select id="medio-transito" name="medio" required>
+                    <option value="telefono">Teléfono / WhatsApp</option>
+                    <option value="email">Correo electrónico</option>
+                  </select>
+                </div>
+                <div class="campo-alerta">
+                  <label for="contacto-transito">Dato de contacto <span aria-hidden="true">*</span></label>
+                  <input id="contacto-transito" name="contacto" type="tel" autocomplete="tel" placeholder="Ej. 11 1234-5678" required>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tu disponibilidad</legend>
+              <div class="campos-dos">
+                <div class="campo-alerta">
+                  <label for="inicio-transito">¿Cuándo podrías comenzar? <span aria-hidden="true">*</span></label>
+                  <select id="inicio-transito" name="inicio" required>
+                    <option value="">Seleccioná una opción</option>
+                    <option>Ahora</option>
+                    <option>En las próximas 2 semanas</option>
+                    <option>A coordinar</option>
+                  </select>
+                </div>
+                <div class="campo-alerta">
+                  <label for="duracion-transito">¿Por cuánto tiempo? <span aria-hidden="true">*</span></label>
+                  <select id="duracion-transito" name="duracion" required>
+                    <option value="">Seleccioná una opción</option>
+                    <option>Hasta 1 semana</option>
+                    <option>Entre 2 y 4 semanas</option>
+                    <option>Más de 1 mes</option>
+                    <option>A coordinar</option>
+                  </select>
+                </div>
+              </div>
+              <div class="campo-alerta">
+                <label for="preferencia-transito">¿A quién podrías recibir? <span class="opcional">(opcional)</span></label>
+                <select id="preferencia-transito" name="preferencia">
+                  <option value="">Sin preferencia</option>
+                  <option>Perro</option>
+                  <option>Gato</option>
+                  <option>Ambos</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tu hogar y convivencia</legend>
+              <div class="campo-alerta">
+                <label for="vivienda-transito">Tipo de vivienda <span aria-hidden="true">*</span></label>
+                <select id="vivienda-transito" name="vivienda" required>
+                  <option value="">Seleccioná una opción</option>
+                  <option>Casa</option>
+                  <option>Departamento</option>
+                  <option>Otra</option>
+                </select>
+              </div>
+              <div class="campo-alerta">
+                <label for="espacio-transito">¿Qué espacio tenés para alojarlo? <span aria-hidden="true">*</span></label>
+                <textarea id="espacio-transito" name="espacio" rows="4" minlength="10" required placeholder="Ej. tengo una habitación tranquila y un patio cerrado donde podría estar..."></textarea>
+                <small>Describí brevemente el espacio disponible (al menos 10 caracteres).</small>
+              </div>
+              <div class="campo-alerta">
+                <label for="mascotas-transito">¿Convivís con otros animales? <span aria-hidden="true">*</span></label>
+                <select id="mascotas-transito" name="mascotas" required>
+                  <option value="">Seleccioná una opción</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div id="mascotas-detalle-contenedor" class="campo-alerta" hidden>
+                <label for="mascotas-detalle-transito">Contanos sobre ellos <span aria-hidden="true">*</span></label>
+                <textarea id="mascotas-detalle-transito" name="mascotas_detalle" rows="3" placeholder="¿Cuántos son? ¿Perros o gatos? ¿Cómo conviven?" disabled></textarea>
+              </div>
+            </fieldset>
+
+            <div class="transito-acuerdo">
+              <input id="acuerdo-transito" type="checkbox" name="acuerdo" required>
+              <label for="acuerdo-transito">Entiendo que completar esta solicitud no confirma un hogar de tránsito. El equipo evaluará las condiciones y se comunicará si hay una posibilidad de alojamiento. <span aria-hidden="true">*</span></label>
+            </div>
+            <button class="boton boton-enviar-alerta" type="submit" id="boton-enviar-transito">Enviar solicitud <span aria-hidden="true">↗</span></button>
+            <p id="error-transito" class="alerta-error" role="alert" hidden></p>
+          </form>
+          </div>
+
+          <!-- Igual que en Alertas: la confirmación reemplaza el formulario en esta tarjeta. -->
+          <div id="confirmacion-transito" class="alerta-confirmacion" role="status" hidden tabindex="-1" aria-labelledby="transito-confirmacion-titulo">
+            <div class="alerta-confirmacion-icono" aria-hidden="true">✓</div>
+            <p class="etiqueta">SOLICITUD COMPLETADA</p>
+            <h2 id="transito-confirmacion-titulo">¡Gracias por ofrecer tu hogar!</h2>
+            <p>Completaste correctamente el formulario de tránsito. El equipo revisaría las condiciones de tu hogar y se comunicaría con vos para coordinar los próximos pasos.</p>
+            <button class="boton secundario" type="button" id="boton-otra-solicitud">Completar otra solicitud</button>
+            <a class="enlace" href="../index.html">Volver al inicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contenedor">
+    <a class="marca" href="../index.html" aria-label="Operación Patitas MTZ, inicio">
+      <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
+    </a>
+    <p>Bienestar animal · La Matanza</p>
+    <div><ul><li>Correo electrónico: zoonosislm@hotmail.com</li><li>Teléfono: 4625-6273</li><li>Dirección: Peribebuy 4770, San Justo</li></ul></div>
+  </footer>
+
+  <script>
+    const formularioTransito = document.getElementById('form-transito');
+    const medioTransito = document.getElementById('medio-transito');
+    const contactoTransito = document.getElementById('contacto-transito');
+    const mascotasTransito = document.getElementById('mascotas-transito');
+    const mascotasContenedor = document.getElementById('mascotas-detalle-contenedor');
+    const mascotasDetalle = document.getElementById('mascotas-detalle-transito');
+    const errorTransito = document.getElementById('error-transito');
+    const contenidoTransito = document.getElementById('transito-formulario-contenido');
+    const confirmacionTransito = document.getElementById('confirmacion-transito');
+
+    // Cambia el tipo y el ejemplo del campo según el medio elegido.
+    function actualizarMedioContacto() {
+      const esEmail = medioTransito.value === 'email';
+      contactoTransito.type = esEmail ? 'email' : 'tel';
+      contactoTransito.placeholder = esEmail ? 'Ej. nombre@correo.com' : 'Ej. 11 1234-5678';
+      contactoTransito.autocomplete = esEmail ? 'email' : 'tel';
+      contactoTransito.value = '';
+      contactoTransito.setCustomValidity('');
+    }
+    medioTransito.addEventListener('change', actualizarMedioContacto);
+
+    function actualizarMascotas() {
+      const tieneMascotas = mascotasTransito.value === 'si';
+      mascotasContenedor.hidden = !tieneMascotas;
+      mascotasDetalle.required = tieneMascotas;
+      mascotasDetalle.disabled = !tieneMascotas;
+      if (!tieneMascotas) mascotasDetalle.value = '';
+    }
+    mascotasTransito.addEventListener('change', actualizarMascotas);
+
+    formularioTransito.addEventListener('submit', (evento) => {
+      evento.preventDefault(); // Formulario de demostración, sin envío a un servidor.
+      errorTransito.hidden = true;
+      contactoTransito.setCustomValidity('');
+
+      if (medioTransito.value === 'telefono' && contactoTransito.value.trim()) {
+        const digitos = contactoTransito.value.replace(/\D/g, '');
+        if (digitos.length < 8) {
+          contactoTransito.setCustomValidity('Ingresá un teléfono válido, con al menos 8 números.');
+        }
+      }
+      if (!formularioTransito.reportValidity()) {
+        errorTransito.textContent = 'Revisá los campos señalados antes de continuar.';
+        errorTransito.hidden = false;
+        return;
+      }
+
+      // Misma transición que en la página de Alertas.
+      contenidoTransito.hidden = true;
+      confirmacionTransito.hidden = false;
+      confirmacionTransito.focus();
+      confirmacionTransito.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+        block: 'start'
+      });
+    });
+
+    document.getElementById('boton-otra-solicitud').addEventListener('click', () => {
+      formularioTransito.reset();
+      contactoTransito.setCustomValidity('');
+      actualizarMedioContacto();
+      actualizarMascotas();
+      errorTransito.hidden = true;
+      confirmacionTransito.hidden = true;
+      contenidoTransito.hidden = false;
+      document.getElementById('nombre-transito').focus();
+    });
+  </script>
+</body>
+</html>
