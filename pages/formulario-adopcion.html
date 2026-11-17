@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de adopción | Operación Patitas</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/adopciones.css">
+</head>
+
+<body class="pagina-adopciones">
+
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <div class="barra-superior">
+        Cuidar a los animales también es cuidar nuestra comunidad.
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="contenedor encabezado">
+
+            <a class="marca" href="../index.html">
+                <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png"
+                    alt="Operación Patitas MTZ">
+            </a>
+
+            <nav aria-label="Navegación principal">
+                <a href="adopciones.html">Adopciones</a>
+
+                <a href="../index.html#campanas">Campañas</a>
+
+                <details class="menu-ayudar">
+                    <summary>Cómo ayudar ⌄</summary>
+
+                    <div class="menu-ayudar-opciones">
+                        <a href="alerta.html">Enviar una alerta</a>
+                        <a href="transito.html">Ofrecer tránsito</a>
+                        <a href="donaciones.html">Donaciones</a>
+                    </div>
+                </details>
+
+                <a href="cuidados.html">Cuidados y bienestar</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="contenido">
+        <p class="adopciones-ruta">
+            <a href="../index.html">Inicio</a> /
+            <a href="adopciones.html">Adopciones</a> /
+            Formulario
+
+            <!-- PRESENTACIÓN -->
+        <section class="contenedor adopciones-presentacion">
+
+            </p>
+
+            <p class="etiqueta">
+                EL PRIMER PASO HACIA UNA NUEVA FAMILIA
+            </p>
+
+            <h1>Formulario de adopción</h1>
+
+            <p class="adopciones-descripcion">
+                Queremos conocerte y saber cómo sería su vida junto a vos.
+            </p>
+
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="adopcion-formulario-fondo">
+            <div class="contenedor adopcion-formulario-distribucion">
+
+                <!-- INFORMACIÓN LATERAL -->
+                <aside class="adopcion-informacion">
+
+
+                    <h2>
+                        Un compromiso<br>
+                        para toda la vida.
+                    </h2>
+
+                    <p>
+                        Adoptar es sumar un integrante a tu familia.
+                        Estas preguntas nos ayudan a conocer tu hogar,
+                        tu rutina y las necesidades de tu futuro compañero.
+                    </p>
+
+                    <div class="adopcion-consejos">
+                        <h3>Antes de comenzar</h3>
+
+                        <ul>
+                            <li>
+                                Completá las respuestas con tiempo y sinceridad.
+                            </li>
+
+                            <li>
+                                Conversá con las personas que viven con vos.
+                            </li>
+
+                            <li>
+                                Prepará fotos de los espacios donde viviría.
+                            </li>
+
+                            <li>
+                                Recordá que completar la solicitud
+                                no confirma la adopción.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="enlace" href="adopciones.html">
+                        ← Volver a los animales
+                    </a>
+
+                </aside>
+
+                <!-- TARJETA DEL FORMULARIO -->
+                <div class="adopcion-formulario-tarjeta">
+
+
+                    <h2>Contanos sobre vos.</h2>
+
+
+
+                    <form class="formulario-adopcion" method="post" enctype="multipart/form-data"
+                        aria-describedby="aviso-maqueta">
+
+                        <!-- DATOS PERSONALES -->
+                        <fieldset>
+                            <legend>01 / Vos y tu futuro compañero</legend>
+
+                            <!-- PREGUNTA 1 -->
+                            <div class="adopcion-campo">
+                                <label for="animal">
+                                    1. ¿A quién querés adoptar? *
+                                </label>
+
+                                <select id="animal" name="animal" required>
+                                    <option value="">Seleccioná un animal</option>
+                                    <option value="milo">Milo</option>
+                                    <option value="luna">Luna</option>
+                                    <option value="toby">Toby</option>
+                                    <option value="nina">Nina</option>
+                                    <option value="simon">Simón</option>
+                                    <option value="roma">Roma</option>
+                                    <option value="coco">Coco</option>
+                                    <option value="olivia">Olivia</option>
+                                    <option value="felipe">Felipe</option>
+                                    <option value="mora">Mora</option>
+                                </select>
+                            </div>
+
+                            <!-- PREGUNTA 2 -->
+                            <div class="adopcion-campo">
+                                <label for="nombre">
+                                    2. Nombre y apellido *
+                                </label>
+
+                                <input type="text" id="nombre" name="nombre" autocomplete="name"
+                                    placeholder="Escribí tu nombre y apellido" minlength="3" maxlength="100" required>
+                            </div>
+
+                            <!-- PREGUNTA 3 -->
+                            <div class="adopcion-campo">
+                                <label for="edad">
+                                    3. ¿Cuántos años tenés? *
+                                </label>
+
+                                <input type="number" id="edad" name="edad" min="18" max="120" placeholder="Ej. 25"
+                                    aria-describedby="edad-ayuda" required>
+
+                                <small id="edad-ayuda">
+                                    La solicitud debe completarla una persona
+                                    de 18 años o más.
+                                </small>
+                            </div>
+
+                            <!-- PREGUNTA 4 -->
+                            <div class="adopcion-campo">
+                                <label for="correo">
+                                    4. Correo electrónico *
+                                </label>
+
+                                <input type="email" id="correo" name="correo" autocomplete="email"
+                                    placeholder="Ej. nombre@correo.com" required>
+                            </div>
+
+                            <!-- PREGUNTA 5 -->
+                            <div class="adopcion-campo">
+                                <label for="telefono">
+                                    5. Teléfono o WhatsApp *
+                                </label>
+
+                                <input type="tel" id="telefono" name="telefono" autocomplete="tel"
+                                    placeholder="Ej. 11 1234-5678" minlength="8" maxlength="25" required>
+                            </div>
+
+                            <!-- PREGUNTA 6 -->
+                            <div class="adopcion-campo">
+                                <label for="localidad">
+                                    6. ¿En qué localidad y barrio vivís? *
+                                </label>
+
+                                <input type="text" id="localidad" name="localidad" autocomplete="address-level2"
+                                    placeholder="Ej. Gregorio de Laferrere, barrio..." minlength="3" maxlength="150"
+                                    required>
+                            </div>
+
+                        </fieldset>
+
+                        <!-- HOGAR Y CONVIVENCIA -->
+                        <fieldset>
+                            <legend>02 / Tu hogar y tu familia</legend>
+
+                            <!-- PREGUNTA 7 -->
+                            <div class="adopcion-campo">
+                                <label for="vivienda">
+                                    7. ¿En qué tipo de vivienda vivís? *
+                                </label>
+
+                                <select id="vivienda" name="vivienda" required>
+                                    <option value="">Seleccioná una opción</option>
+                                    <option value="casa">Casa</option>
+                                    <option value="departamento">Departamento</option>
+                                    <option value="ph">PH</option>
+                                    <option value="otra">Otra</option>
+                                </select>
+                            </div>
+
+                            <!-- PREGUNTA 8 -->
+                            <div class="adopcion-campo">
+                                <label for="permiso">
+                                    8. ¿La vivienda es propia o alquilada?
+                                    ¿Tenés autorización para tener animales? *
+                                </label>
+
+                                <select id="permiso" name="permiso" required>
+                                    <option value="">Seleccioná una opción</option>
+
+                                    <option value="propia">
+                                        Propia, puedo tener animales
+                                    </option>
+
+                                    <option value="alquilada-permiso">
+                                        Alquilada, tengo autorización
+                                    </option>
+
+                                    <option value="prestada-permiso">
+                                        Prestada, tengo autorización
+                                    </option>
+
+                                    <option value="pendiente">
+                                        Todavía debo consultarlo
+                                    </option>
+
+                                    <option value="otra">
+                                        Otra situación
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- PREGUNTA 9 -->
+                            <div class="adopcion-campo">
+                                <label for="familia">
+                                    9. ¿Con quiénes vivís?
+                                    ¿Todos están de acuerdo con adoptar? *
+                                </label>
+
+                                <textarea id="familia" name="familia" rows="4" maxlength="1500"
+                                    placeholder="Contanos cuántas personas viven con vos, si hay niños y si todos están de acuerdo."
+                                    required></textarea>
+                            </div>
+
+                            <!-- PREGUNTA 10 -->
+                            <div class="adopcion-campo">
+                                <label for="otros-animales">
+                                    10. ¿Tenés otros animales o experiencia
+                                    previa con mascotas? *
+                                </label>
+
+                                <textarea id="otros-animales" name="otros_animales" rows="4" maxlength="1500"
+                                    placeholder="Si tenés animales, contanos cuáles, sus edades y cómo conviven. Si no tenés, contanos tu experiencia."
+                                    required></textarea>
+                            </div>
+
+                            <!-- PREGUNTA 11 -->
+                            <div class="adopcion-campo">
+                                <label for="seguridad">
+                                    11. ¿Cómo son las protecciones de ventanas,
+                                    balcones, patio y salidas? *
+                                </label>
+
+                                <textarea id="seguridad" name="seguridad" rows="4" maxlength="1500"
+                                    placeholder="Describí los cerramientos y las medidas que tenés o incorporarías para evitar escapes."
+                                    required></textarea>
+                            </div>
+
+                        </fieldset>
+
+                        <!-- CUIDADOS Y FOTOS -->
+                        <fieldset>
+                            <legend>03 / Una vida juntos</legend>
+
+                            <!-- PREGUNTA 12 -->
+                            <div class="adopcion-campo">
+                                <label for="rutina">
+                                    12. ¿Cuántas horas estaría solo y dónde dormiría? *
+                                </label>
+
+                                <textarea id="rutina" name="rutina" rows="4" maxlength="1500"
+                                    placeholder="Contanos tu rutina, cuánto tiempo estaría solo y cuál sería su lugar para descansar."
+                                    required></textarea>
+                            </div>
+
+                            <!-- PREGUNTA 13 -->
+                            <div class="adopcion-campo">
+                                <label for="cuidados">
+                                    13. ¿Cómo organizarías su alimentación,
+                                    atención veterinaria, paseos y cuidado durante vacaciones? *
+                                </label>
+
+                                <textarea id="cuidados" name="cuidados" rows="4" maxlength="1500"
+                                    placeholder="Contanos quién se haría cargo de los cuidados, cómo afrontarías sus gastos y quién lo cuidaría si viajás."
+                                    required></textarea>
+                            </div>
+
+                            <!-- PREGUNTA 14 -->
+                            <div class="adopcion-campo">
+                                <label for="motivacion">
+                                    14. ¿Por qué querés adoptar y cómo acompañarías
+                                    su adaptación al hogar? *
+                                </label>
+
+                                <textarea id="motivacion" name="motivacion" rows="4" maxlength="1500"
+                                    placeholder="Contanos qué esperás de la adopción y cómo actuarías ante dificultades de adaptación o convivencia."
+                                    required></textarea>
+                            </div>
+
+                            <!-- PREGUNTA 15 -->
+                            <div class="adopcion-campo">
+                                <label for="fotos">
+                                    15. Adjuntá fotos de tu hogar *
+                                </label>
+
+                                <div class="adopcion-archivos">
+
+                                    <span class="adopcion-archivos-icono" aria-hidden="true">⌂</span>
+
+                                    <p>
+                                        Mostranos los espacios donde viviría
+                                        tu nuevo compañero.
+                                    </p>
+
+                                    <input type="file" id="fotos" name="fotos[]"
+                                        accept="image/jpeg,image/png,image/webp" multiple aria-describedby="fotos-ayuda"
+                                        required>
+
+                                </div>
+
+                                <small id="fotos-ayuda">
+                                    Incluí el ambiente principal, su lugar de descanso
+                                    y, si tenés, patio, balcón o protecciones de ventanas.
+                                    Podés seleccionar varias imágenes JPG, PNG o WEBP.
+                                    Evitá incluir personas o documentación.
+                                </small>
+                            </div>
+
+                        </fieldset>
+
+                        <!-- COMPROMISO -->
+                        <div class="adopcion-acuerdo">
+
+                            <input type="checkbox" id="compromiso" name="compromiso" required>
+
+                            <label for="compromiso">
+                                Entiendo que adoptar implica asumir sus cuidados
+                                durante toda la vida y que completar este formulario
+                                no garantiza la adopción. *
+                            </label>
+
+                        </div>
+                        <div class="adopcion-formulario-acciones">
+
+                            <!-- Si falta algo, el navegador indica qué campo corregir -->
+                            <button class="boton revisar-formulario" type="submit">
+                                Enviar solicitud ↗
+                            </button>
+
+                            <!-- Cuando todo es válido, este enlace abre la confirmación -->
+                            <a class="boton confirmar-formulario" href="#confirmacion-adopcion">
+                                Enviar solicitud ↗
+                            </a>
+
+                            <a class="enlace" href="adopciones.html">
+                                Volver a adopciones
+                            </a>
+
+                        </div>
+
+                        <p class="aviso-campos">
+                            Todos los campos son obligatorios.
+                            Adjuntá al menos una foto y marcá el compromiso.
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <section id="confirmacion-adopcion" class="popup-confirmacion" role="dialog" aria-modal="true"
+            aria-labelledby="titulo-confirmacion">
+            <div class="confirmacion-tarjeta">
+
+                <a href="#contenido" class="confirmacion-cerrar" aria-label="Cerrar confirmación">
+                    ×
+                </a>
+
+                <span class="confirmacion-icono" aria-hidden="true">✓</span>
+
+                <p class="etiqueta">¡GRACIAS POR ELEGIR ADOPTAR!</p>
+
+                <h2 id="titulo-confirmacion">
+                    Recibimos tu formulario.
+                </h2>
+
+                <p>
+                    El próximo paso es que nuestro equipo revise
+                    tu solicitud y se comunique con vos para coordinar una entrevista.
+                </p>
+
+                <a class="boton" href="adopciones.html">
+                    Volver a adopciones ↗
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="contenedor">
+
+        <a class="marca" href="../index.html">
+            <img class="logo-marca" src="../img/Corazón protector de Operación Patitas MTZ.png"
+                alt="Operación Patitas MTZ">
+        </a>
+
+        <p>Bienestar animal · La Matanza</p>
+
+        <a class="enlace" href="../index.html">
+            Volver al inicio ↗
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

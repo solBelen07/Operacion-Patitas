@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Operación Patitas · Bienestar animal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/turnos.css">
 </head>
 
 <body>
@@ -33,55 +35,51 @@
             <a href="./pages/donaciones.html">Donaciones</a>
           </div>
         </details>
-        <a href="../index.html#cuidados">Cuidados y bienestar</a>
+        <a href="/pages/cuidados.html">Cuidados y bienestar</a>
       </nav>
     </div>
   </header>
 
   <main id="contenido">
 
-<section id="inicio" class="portada">
+    <section id="inicio" class="portada">
 
-  <img
-    class="portada-imagen"
-    src="./img/Perro y gato en jardín luminoso.png"
-    alt="Un perro mestizo y un gato juntos en un patio"
-    fetchpriority="high"
-  >
+      <img class="portada-imagen" src="./img/Perro y gato en jardín luminoso.png"
+        alt="Un perro mestizo y un gato juntos en un patio" fetchpriority="high">
 
-  <div class="contenedor portada-contenido">
-    <div class="portada-texto">
+      <div class="contenedor portada-contenido">
+        <div class="portada-texto">
 
-      <p class="etiqueta">
-        <span class="puntito" aria-hidden="true"></span>
-        BIENESTAR ANIMAL EN LA MATANZA
-      </p>
+          <p class="etiqueta">
+            <span class="puntito" aria-hidden="true"></span>
+            BIENESTAR ANIMAL EN LA MATANZA
+          </p>
 
-      <h1>
-        Una comunidad<br>
-        que cuida.<br>
-        <em>Una vida que cambia.</em>
-      </h1>
+          <h1>
+            Una comunidad<br>
+            que cuida.<br>
+            <em>Una vida que cambia.</em>
+          </h1>
 
-      <p class="bajada">
-        Cada patita merece cuidado, respeto y un hogar.
-        Juntos podemos hacer que eso pase.
-      </p>
+          <p class="bajada">
+            Cada patita merece cuidado, respeto y un hogar.
+            Juntos podemos hacer que eso pase.
+          </p>
 
-      <div class="acciones">
-        <a class="boton" href="#adopciones">
-          Quiero adoptar
-          <span aria-hidden="true">↗</span>
-        </a>
+          <div class="acciones">
+            <a class="boton" href="./pages/adopciones.html">
+              Quiero adoptar
+              <span aria-hidden="true">↗</span>
+            </a>
 
-        <a class="boton secundario" href="#campanas">
-          Ver campañas
-        </a>
+            <a class="boton secundario" href="./pages/turnos.html">
+              Ver campañas
+            </a>
+          </div>
+
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- CUIDADOS -->
     <section id="cuidados" class="contenedor cuidados">
@@ -117,15 +115,15 @@
         <div>
           <p class="etiqueta">UN HOGAR LO CAMBIA TODO</p>
           <h2>Tu próximo gran amigo.</h2>
-          <p>      
-             Conocé sus historias, tal vez la próxima sea junto a vos.</p>
+          <p>
+            Conocé sus historias, tal vez la próxima sea junto a vos.</p>
         </div>
 
 
         <p>
-         <button class="boton">
+          <a class="boton" href="./pages/adopciones.html">
             Ver animales en adopción<span aria-hidden="true">↗</span>
-         </button>
+          </a>
         </p>
       </div>
 
@@ -134,11 +132,7 @@
         <!-- MILO -->
         <article class="animal">
           <div class="animal-foto">
-            <img
-              src="./img/perro-mestizo.jpg"
-              alt="Milo, perro mestizo de pelaje blanco y negro"
-              loading="lazy"
-            >
+            <img src="./img/perro-mestizo.jpg" alt="Milo, perro mestizo de pelaje blanco y negro" loading="lazy">
 
             <span class="chip">En adopción</span>
           </div>
@@ -171,11 +165,7 @@
         <!-- LUNA -->
         <article class="animal">
           <div class="animal-foto">
-            <img
-              src="./img/gato.jpg"
-              alt="Luna, gata de ojos verdes"
-              loading="lazy"
-            >
+            <img src="./img/gato.jpg" alt="Luna, gata de ojos verdes" loading="lazy">
 
             <span class="chip">En adopción</span>
           </div>
@@ -208,11 +198,7 @@
         <!-- TOBY -->
         <article class="animal">
           <div class="animal-foto">
-            <img
-              src="./img/perro2.jpg"
-              alt="Toby, perro de pelaje marrón y blanco"
-              loading="lazy"
-            >
+            <img src="./img/perro2.jpg" alt="Toby, perro de pelaje marrón y blanco" loading="lazy">
 
             <span class="chip">En adopción</span>
           </div>
@@ -248,6 +234,7 @@
     <!-- CAMPAÑAS -->
     <section id="campanas" class="campanas seccion">
       <div class="contenedor campanas-grilla">
+
         <div>
           <p class="etiqueta">PREVENIR TAMBIÉN ES CUIDAR</p>
 
@@ -257,15 +244,17 @@
           </h2>
 
           <p>
-            Consultá las jornadas gratuitas de castración y
-            vacunación. Conocé la fecha, el lugar y la modalidad
-            de atención.
+            Conocé nuestras jornadas gratuitas de castración
+            y vacunación para perros y gatos.
+            Elegí una campaña y completá los datos para solicitar un turno.
           </p>
-
         </div>
 
         <div class="agenda">
+
+          <!-- CASTRACIÓN -->
           <article class="jornada">
+
             <div class="fecha">
               <strong>21</strong>
               <span>NOV</span>
@@ -273,10 +262,11 @@
 
             <div>
               <span class="tipo">CASTRACIÓN</span>
+
               <h3>Jornada de castración</h3>
 
-              <p>Laferrere · 9 a 13 h</p>
-              <small>Con turno previo </small>
+              <p>Laferrere · 8:00 a 15:00</p>
+              <small>Atención gratuita con turno previo.</small>
 
               <details class="detalle-fijo">
                 <summary class="enlace">
@@ -285,17 +275,26 @@
                 </summary>
 
                 <p class="detalle-texto">
-                  21 de noviembre de 2026, de 9 a 13 h, en Laferrere.
-                  Sede y dirección pendientes de definir.
-                  Atención gratuita con turno previo.
-                  La ficha final incluirá requisitos e indicaciones
-                  del equipo veterinario antes de solicitar el turno.
+                  21 de noviembre de 2026, de 8:00 a 15:00.
+                  Jornada de castración para perros y gatos.
+                  <br>
+                  Dirección: Juan Manuel de rosas 11.367, Gregorio de Laferrere. <br>
+                  Las indicaciones de preparación serán informadas
+                  por el equipo veterinario a traves de WhatsApp.
                 </p>
               </details>
+
+              <a class="boton" href="#popup-turno">
+                Quiero sacar un turno
+              </a>
+
             </div>
+
           </article>
 
+          <!-- VACUNACIÓN -->
           <article class="jornada">
+
             <div class="fecha">
               <strong>28</strong>
               <span>NOV</span>
@@ -303,10 +302,11 @@
 
             <div>
               <span class="tipo">VACUNACIÓN</span>
+
               <h3>Jornada de vacunación</h3>
 
-              <p>San Justo · 9 a 13 h</p>
-              <small>Por orden de llegada</small>
+              <p>San Justo · 8:00 a 15:00</p>
+              <small>Atención gratuita con turno previo.</small>
 
               <details class="detalle-fijo">
                 <summary class="enlace">
@@ -315,19 +315,105 @@
                 </summary>
 
                 <p class="detalle-texto">
-                  28 de noviembre de 2026, de 9 a 13 h, en San Justo.
-                  Sede y dirección pendientes de definir.
-                  Atención gratuita por orden de llegada.
-                  La ficha final indicará las vacunas disponibles
-                  y los requisitos de participación.
+                  28 de noviembre de 2026, de 8:00 a 15:00.
+                  Jornada de vacunación para perros y gatos.
+                  <br>
+                  Dirección: Almafuerte 1345, San Justo. <br>
+                  Las vacunas disponibles para aplicar seran: quintuple, sextuple, antirrábica y triple felina.
+
                 </p>
               </details>
+
+              <a class="boton" href="#popup-turno">
+                Quiero sacar un turno
+              </a>
             </div>
+
           </article>
+
         </div>
       </div>
-    </section>
+      <!-- POPUP PARA SOLICITAR TURNO -->
+      <section id="popup-turno" class="popup-turno" role="dialog" aria-modal="true" aria-labelledby="titulo-turno">
+        <div class="popup-turno-contenido">
 
+          <a href="#campanas" class="cerrar-popup" aria-label="Cerrar">
+            ×
+          </a>
+
+          <p class="etiqueta">CAMPAÑAS GRATUITAS</p>
+          <h2 id="titulo-turno">Solicitá un turno.</h2>
+          <p>Atención de 8:00 a 15:00. Completá todos los campos.</p>
+
+          <form class="form-popup" method="post">
+
+            <label for="turno-campana">Campaña</label>
+            <select id="turno-campana" name="campana" required>
+              <option value="">Seleccioná una campaña</option>
+              <option value="castracion">
+                Castración · 21/11/2026 · Laferrere
+              </option>
+              <option value="vacunacion">
+                Vacunación · 28/11/2026 · San Justo
+              </option>
+            </select>
+
+            <label for="turno-nombre">Nombre</label>
+            <input id="turno-nombre" name="nombre" type="text" autocomplete="given-name" required>
+
+            <label for="turno-apellido">Apellido</label>
+            <input id="turno-apellido" name="apellido" type="text" autocomplete="family-name" required>
+
+            <label for="turno-telefono">Teléfono o WhatsApp</label>
+            <input id="turno-telefono" name="telefono" type="tel" autocomplete="tel" required>
+
+            <label for="turno-especie">Animal</label>
+            <select id="turno-especie" name="especie" required>
+              <option value="">Seleccioná una opción</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+            </select>
+
+            <label for="turno-animal">Nombre del animal</label>
+            <input id="turno-animal" name="nombre_animal" type="text" required>
+
+            <label for="turno-edad">Edad aproximada</label>
+            <input id="turno-edad" name="edad" type="text" placeholder="Ej. 6 meses o 3 años" required>
+
+            <label for="turno-horario">Horario</label>
+            <select id="turno-horario" name="horario" required>
+              <option value="">Seleccioná un horario</option>
+              <option>08:00</option>
+              <option>08:30</option>
+              <option>09:00</option>
+              <option>09:30</option>
+              <option>10:00</option>
+              <option>10:30</option>
+              <option>11:00</option>
+              <option>11:30</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+            </select>
+
+            <p class="popup-aclaracion">
+              Antes de la castración, seguí las indicaciones de ayuno de comida y agua que te dé el equipo veterinario e
+              informá si tu animal tiene alguna enfermedad o toma medicación.
+              Llevá a los perros con collar y correa, y a los gatos en una transportadora segura. Prepará una manta para
+              después de la cirugía y organizá su traslado de regreso a casa.
+            </p>
+
+            <button class="boton" type="submit" disabled>
+              Solicitar turno
+            </button>
+
+          </form>
+        </div>
+      </section>
+    </section>
     <!-- CÓMO AYUDAR -->
     <section id="ayudar" class="seccion contenedor">
       <div class="centrado">
@@ -425,7 +511,8 @@
       </h2>
 
       <p>
-       Centro de zoonosis del Municipio de La Matanza cuyo objetivo es garantizar una mejor calidad de vida a las mascotas del distrito.
+        Centro de zoonosis del Municipio de La Matanza cuyo objetivo es garantizar una mejor calidad de vida a las
+        mascotas del distrito.
         Impulsando adopciones responsables, campañas de castración
         y vacunación, y acciones de cuidado junto a la comunidad.
       </p>
@@ -437,28 +524,22 @@
 
   <!-- PIE DE PÁGINA -->
   <footer class="contenedor">
-    <a
-      class="marca"
-      href="#inicio"
-      aria-label="Operación Patitas MTZ, inicio"
-    >
-      <img
-        class="logo-marca"
-        src="./img/Corazón protector de Operación Patitas MTZ.png"
-        alt="Operación Patitas MTZ"
-      >
+    <a class="marca" href="#inicio" aria-label="Operación Patitas MTZ, inicio">
+      <img class="logo-marca" src="./img/Corazón protector de Operación Patitas MTZ.png" alt="Operación Patitas MTZ">
     </a>
 
     <p>Bienestar animal · La Matanza</p>
 
-    <div> <ul>
-      <li>Correo electrónico: zoonosislm@hotmail.com</li>
-      <li>Teléfono: 4625-6273</li>
-      <li>Dirección: Peribebuy 4770, San Justo</li>   
+    <div>
+      <ul>
+        <li>Correo electrónico: operacionpatitas@hotmail.com</li>
+        <li>Teléfono: 4625-6273</li>
+        <li>Dirección: Peribebuy 4770, San Justo</li>
 
-    </ul>
+      </ul>
 
     </div>
   </footer>
 </body>
+
 </html>
