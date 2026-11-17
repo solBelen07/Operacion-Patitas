@@ -1380,3 +1380,468 @@ footer > a:last-child {
   .donaciones-campos-dinamicos { padding: 15px 12px 4px; }
   .donaciones-aviso-ejemplo { padding: 15px 12px; }
 }
+
+/* ========================================
+   PAGINA: CUIDADOS Y BIENESTAR
+======================================== */
+
+.pagina-cuidados {
+  background-color: var(--beige);
+}
+
+/* PORTADA */
+
+.cuidados-hero {
+  padding: 2rem 0 5rem;
+  background-color: #eeece1;
+}
+
+.cuidados-hero .migas {
+  margin-bottom: 3rem;
+  color: var(--texto);
+  font-size: 0.9rem;
+}
+
+.cuidados-hero .migas a {
+  color: var(--oliva);
+  text-decoration: none;
+}
+
+.cuidados-hero .migas a:hover {
+  text-decoration: underline;
+}
+
+.cuidados-hero-grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.cuidados-hero-texto h1 {
+  margin: 1rem 0;
+  color: var(--oscuro);
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.05;
+}
+
+.cuidados-hero-texto h1 em {
+  color: var(--naranja);
+  font-weight: normal;
+}
+
+.cuidados-hero-texto .bajada {
+  max-width: 34rem;
+  color: var(--texto);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.cuidados-hero-visual {
+  position: relative;
+}
+
+.cuidados-hero-visual img {
+  display: block;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.cuidados-imagen-nota {
+  position: absolute;
+  right: -1rem;
+  bottom: 1.5rem;
+  max-width: 19rem;
+  padding: 1rem 1.3rem;
+  background-color: #fffdf7;
+  color: var(--oscuro);
+  border-radius: 0.7rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%);
+}
+
+.cuidados-imagen-nota span {
+  margin-right: 0.5rem;
+  color: var(--naranja);
+}
+
+/* TITULOS DE SECCION */
+
+.cuidados-titulo {
+  max-width: 43rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.cuidados-titulo h2 {
+  margin: 0.8rem 0;
+  color: var(--oscuro);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.cuidados-titulo > p:last-child {
+  color: var(--texto);
+  line-height: 1.8;
+}
+
+/* CUIDADOS BASICOS */
+
+.cuidados-basicos {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.cuidados-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cuidado-card {
+  overflow: hidden;
+  background-color: #fffdf7;
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cuidado-card:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 0.7rem 1.5rem rgb(41 53 36 / 10%);
+}
+
+.cuidado-card > img {
+  display: block;
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.cuidado-card-contenido {
+  padding: 1.5rem;
+}
+
+.cuidado-icono {
+  display: inline-flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeece1;
+  color: var(--oliva);
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.cuidado-card h3 {
+  margin: 1rem 0 0.6rem;
+  color: var(--oscuro);
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+}
+
+.cuidado-card p {
+  margin: 0;
+  color: var(--texto);
+  line-height: 1.7;
+}
+
+/* SALUD Y PREVENCION */
+
+.cuidados-salud {
+  padding: 6rem 0;
+  background-color: #e9e8dc;
+}
+
+.cuidados-salud-grilla {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.cuidados-salud-visual img {
+  display: block;
+  width: 100%;
+  min-height: 27rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.cuidados-salud-texto h2 {
+  margin: 0.8rem 0 1rem;
+  color: var(--oscuro);
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.cuidados-salud-texto > p {
+  color: var(--texto);
+  line-height: 1.8;
+}
+
+.cuidados-lista {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cuidados-lista li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: var(--oscuro);
+  line-height: 1.5;
+}
+
+.cuidados-lista i {
+  margin-top: 0.2rem;
+  color: var(--naranja);
+}
+
+.cuidados-salud-texto .cuidados-aclaracion {
+  padding: 1rem;
+  background-color: #f6f3ea;
+  border-left: 0.2rem solid var(--naranja);
+  border-radius: 0.3rem;
+  font-size: 0.95rem;
+}
+
+/* BIENESTAR EMOCIONAL */
+
+.cuidados-emocionales {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.bienestar-grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.bienestar-grilla article {
+  padding: 2rem;
+  background-color: #fffdf7;
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.bienestar-grilla article > span {
+  display: inline-flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeece1;
+  color: var(--naranja);
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+
+.bienestar-grilla h3 {
+  margin: 1rem 0 0.6rem;
+  color: var(--oscuro);
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.bienestar-grilla p {
+  margin: 0;
+  color: var(--texto);
+  line-height: 1.7;
+}
+
+/* CONSEJOS PARA PERROS Y GATOS */
+
+.cuidados-especies {
+  padding: 6rem 0;
+  background-color: #eeece1;
+}
+
+.especies-grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.especie-card {
+  overflow: hidden;
+  background-color: #fffdf7;
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+}
+
+.especie-card > img {
+  display: block;
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+
+.especie-card > div {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.especie-card h3 {
+  margin: 0 0 1rem;
+  color: var(--oscuro);
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+}
+
+.especie-card h3 i {
+  margin-right: 0.5rem;
+  color: var(--naranja);
+}
+
+.especie-card ul {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.especie-card li::marker {
+  color: var(--naranja);
+}
+
+/* CIERRE */
+
+.cuidados-cierre {
+  padding: 6rem 0;
+  background-color: var(--oliva);
+  color: #fffdf7;
+  text-align: center;
+}
+
+.cuidados-cierre .etiqueta {
+  color: #e7dfc9;
+}
+
+.cuidados-cierre h2 {
+  max-width: 43rem;
+  margin: 1rem auto;
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.cuidados-cierre > .contenedor > p:not(.etiqueta) {
+  max-width: 38rem;
+  margin: 0 auto 2rem;
+  color: #f0eee5;
+  line-height: 1.8;
+}
+
+.cuidados-cierre .boton {
+  display: inline-block;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 64em) {
+  .cuidados-hero-grilla,
+  .cuidados-salud-grilla {
+    gap: 2rem;
+  }
+
+  .cuidados-imagen-nota {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .cuidados-hero-grilla,
+  .cuidados-salud-grilla {
+    grid-template-columns: 1fr;
+  }
+
+  .cuidados-hero-visual {
+    margin-top: 1rem;
+  }
+
+  .cuidados-hero-visual img {
+    height: 24rem;
+  }
+
+  .cuidados-tarjetas,
+  .bienestar-grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cuidado-card:last-child,
+  .bienestar-grilla article:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .cuidados-salud-visual img {
+    min-height: 20rem;
+    max-height: 25rem;
+  }
+
+  .especies-grilla {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 30em) {
+  .cuidados-hero {
+    padding-top: 1rem;
+  }
+
+  .cuidados-hero .migas {
+    margin-bottom: 2rem;
+  }
+
+  .cuidados-hero-texto h1 {
+    font-size: 2.8rem;
+  }
+
+  .cuidados-hero-visual img {
+    height: 18rem;
+  }
+
+  .cuidados-imagen-nota {
+    position: static;
+    max-width: none;
+    margin-top: 0.8rem;
+  }
+
+  .cuidados-tarjetas,
+  .bienestar-grilla {
+    grid-template-columns: 1fr;
+  }
+
+  .cuidado-card:last-child,
+  .bienestar-grilla article:last-child {
+    grid-column: auto;
+  }
+
+  .cuidados-basicos,
+  .cuidados-emocionales,
+  .cuidados-salud,
+  .cuidados-especies,
+  .cuidados-cierre {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .especie-card > img {
+    height: 13rem;
+  }
+
+  .especie-card > div {
+    padding: 1.3rem;
+  }
+}
