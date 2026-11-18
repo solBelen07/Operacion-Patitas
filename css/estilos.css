@@ -1904,7 +1904,7 @@ footer>a:last-child {
 
 .donaciones-hero-visual img {
   height: 435px;
-  border-radius: 190px 190px 14px 14px;
+  border-radius: 10px;
   object-position: center 45%;
 }
 
@@ -2059,10 +2059,10 @@ footer>a:last-child {
   font-size: 18px;
 }
 
-.donaciones-alias-grilla {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+.donaciones-alias{
+  display: flex;
+  justify-content: center;
+
 }
 
 .donaciones-alias-tarjeta {
@@ -2071,6 +2071,7 @@ footer>a:last-child {
   border-radius: 13px;
   background: #fffdf8;
   box-shadow: 0 12px 24px rgba(41, 53, 36, .04);
+  width: 70%;
 }
 
 .donaciones-alias-cabecera {
@@ -2141,14 +2142,20 @@ footer>a:last-child {
   color: var(--oscuro);
 }
 
+.donaciones-nota-final-div{
+  display: flex;
+  justify-content: center;
+}
+
 .donaciones-nota-final {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   margin-top: 26px;
   padding: 21px 24px;
   border-radius: 9px;
   background: #d8decb;
+  width: 70%;
 }
 
 .donaciones-nota-final span {
